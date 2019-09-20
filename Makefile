@@ -9,8 +9,8 @@ LDFLAGS = -lm
 all: $(PROG_NAME)
 
 $(PROG_NAME): $(obj)
-    $(CC) -o $@ $^ $(CFLAGS) $(LDFLAGS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LDFLAGS)
 
 .PHONY: clean all
 clean:
-    rm -f $(obj) $(PROG_NAME)
+	rm -f $(obj) $(PROG_NAME)
